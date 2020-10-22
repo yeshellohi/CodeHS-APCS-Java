@@ -16,8 +16,10 @@ public class Divisibility extends ConsoleProgram
     {
         int dividend = readInt("Enter the dividend: ");
         int divisor = readInt("Enter the divisor: ");
-        if(divisor != 0){
-            System.out.println(dividend +" is not divisible by " + divisor + "!");
+        if(divisor <= 0){
+        //other thing didnt work
+            System.out.println(dividend +" is not divisible by " + divisor);
+                                                                    //apparently didnt need "!"
         }
         else{
             if(dividend / divisor == (double) dividend / divisor)
